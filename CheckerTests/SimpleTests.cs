@@ -72,12 +72,12 @@ namespace CheckerTests
         [TestMethod]
         public void ZeroInArguments()
         {
-            Assert.AreEqual("Это не треугольник", TriangleChecker.Checker.Check(6,4,0));
+            Assert.AreEqual("Стороны должны быть больше 0", TriangleChecker.Checker.Check(6,4,0));
         }
         [TestMethod]
         public void NegativeArguments()
         {
-            Assert.AreEqual("Это не треугольник", TriangleChecker.Checker.Check(3, -4, 5));
+            Assert.AreEqual("Стороны должны быть больше 0", TriangleChecker.Checker.Check(3, -4, 5));
         }
         [TestMethod]
         public void NotATriangle()
